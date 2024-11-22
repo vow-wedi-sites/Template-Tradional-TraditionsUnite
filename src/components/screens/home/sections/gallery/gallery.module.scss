@@ -1,0 +1,60 @@
+// photo_shoot_video_bg.jpg
+
+.GallerySection {
+  background-color: $color_p1;
+  .video {
+    margin: 0 auto 16px auto;
+    max-width: 950px;
+    position: relative;
+    img {
+      width: 100%;
+      // border-radius: 20px;
+    }
+    .text {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      color: white;
+
+      @include flexCenter;
+      flex-direction: column;
+
+      p {
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+      > div {
+        border: 1px solid transparent;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: $color_p2;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 2px;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.2);
+          border-color: white;
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+}
+
+.Gallery {
+  min-height: 130dvh;
+
+  @include respond-below(md) {
+    min-height: 100dvh;
+  }
+
+  figure {
+    img {
+      border-radius: 10px;
+    }
+  }
+}

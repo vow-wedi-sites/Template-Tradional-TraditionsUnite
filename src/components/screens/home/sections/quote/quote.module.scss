@@ -1,0 +1,78 @@
+.QuoteSection {
+  //   height: 500px;
+  background-color: $color_p4;
+  .flowers {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    img {
+      width: 80px;
+      animation: fly 2s linear infinite;
+      transform-origin: top;
+      &:nth-child(2) {
+        animation-delay: 1s;
+      }
+    }
+  }
+
+  .cont {
+    position: relative;
+    text-align: center;
+    padding-bottom: 50px;
+
+    .q1 {
+      font-size: 20px;
+      padding: 50px 80px;
+      font-weight: 800;
+      color: $color_p3;
+    }
+
+    .q2 {
+      font-size: 20px;
+      padding: 0px;
+    }
+  }
+
+  @include respond-above(md) {
+    .flowers {
+      img {
+        width: 120px;
+      }
+    }
+
+    .cont {
+      .q1 {
+        font-size: 40px;
+        padding: 50px 120px;
+      }
+
+      .q2 {
+        padding: 0 80px;
+      }
+    }
+  }
+}
+
+@keyframes fly {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

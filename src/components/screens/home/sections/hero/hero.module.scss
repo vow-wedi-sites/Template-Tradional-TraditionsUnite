@@ -1,0 +1,89 @@
+.HeroSection {
+  min-height: 100dvh;
+  background-color: $color_p3;
+  position: relative;
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/svg/hreo_pattern.svg");
+    background-size: 500px;
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  .wrap {
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    z-index: 10;
+    position: relative;
+    justify-content: center;
+    padding-bottom: 16px;
+
+    .left {
+      img {
+        height: 600px;
+        margin-top: 100px;
+      }
+    }
+
+    .right {
+      text-align: center;
+      color: white;
+    //   padding-top: 90px;
+      //   width: 100%;
+
+      p {
+        font-size: 40px;
+      }
+
+      span {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 100px;
+        color: $color_p4;
+        font-weight: bold;
+        line-height: 100px;
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    .wrap {
+      flex-direction: column;
+      gap: 50px;
+
+      .left {
+        img {
+          margin-top: 120px;
+          height: 350px;
+        }
+      }
+
+      .right {
+        padding-top: 0;
+        p {
+          font-size: 30px;
+          line-height: 40px;
+        }
+
+        span {
+          font-size: 20px;
+        }
+
+        h2 {
+          font-size: 60px;
+          line-height: 60px;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
