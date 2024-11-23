@@ -34,17 +34,17 @@ const EventsSection = () => {
 
   return (
     <section id="events" className={styles.EventsSection}>
-        <div className={styles.bg}></div>
+      <div className={styles.bg}></div>
       <CustomContainer>
         <CustomSection head="Wedding Events" variant={2}>
           <div className={styles.wrap}>
             {events.map((event) => {
               return (
                 <div className={styles.event} key={event.name}>
-                  <div className={styles.img} data-aos='fade-right'>
+                  <div className={styles.img} data-aos="fade-right">
                     <Image src={event.img} alt={event.name} />
                   </div>
-                  <div className={styles.text} data-aos='fade-left'>
+                  <div className={styles.text} data-aos="fade-left">
                     <h1 className={fonts.rouge_Script}>{event.name}</h1>
                     <p>{event.place}</p>
                     <p>{event.time}</p>

@@ -10,15 +10,25 @@ const HeroSection = () => {
       <div className={styles.bg} />
       <CustomContainer>
         <div className={styles.wrap}>
-          <div className={styles.left}>
+          <div className={styles.left} data-aos="fade-right">
             <Image src="/assets/svg/couple.svg" alt="couple vector" />
           </div>
           <div className={styles.right}>
-            <p>We Are Inviting You</p>
-            <span>To The Wedding Of</span>
-            <h2 className={fonts.rouge_Script}>Sidharth & Hasini</h2>
-            <span>On</span>
-            <p>12.10.24</p>
+            <div data-aos="fade-down" data-aos-offset="-300">
+              <p>We Are Inviting You</p>
+              <span>To The Wedding Of</span>
+            </div>
+            <h2
+              className={fonts.rouge_Script}
+              data-aos="zoom-in"
+              data-aos-offset="-300"
+            >
+              Sidharth & Hasini
+            </h2>
+            <div data-aos="fade-up" data-aos-offset="-300">
+              <span>On</span>
+              <p>12.10.24</p>
+            </div>
           </div>
         </div>
       </CustomContainer>
