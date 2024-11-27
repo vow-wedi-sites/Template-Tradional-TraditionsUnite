@@ -14,7 +14,7 @@ const Footer = () => {
       <CustomContainer>
         <div className={styles.wrap}>
           <div className={styles.logo}>
-            <Image src="/logo/logo.png" alt="logo" fluid />
+            <Image src="/logo/vws_logo_white.png" alt="logo" fluid />
             <br />
             <br />
           </div>
@@ -30,19 +30,19 @@ const Footer = () => {
           </div>
           <div className={styles.text}>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              architecto ex dolor amet quisquam iste at animi adipisci, sit
-              consectetur labore eum debitis, maiores voluptate perspiciatis
-              soluta tenetur harum vero?
+              Transform your love story into a stunning digital experience. We
+              create elegant, personalized wedding websites to celebrate your
+              journey, keep guests informed, and make every moment
+              unforgettable.
             </p>
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
               <div>
-                <EnvelopeAt /> <p>connect@vowwdisites.com</p>
+                <EnvelopeAt /> <p>connect@vowwedsites.com</p>
               </div>
               <div>
-                <Phone /> <p>+91 99944 99999</p>
+                <Phone /> <p>+91 79042 36030</p>
               </div>
             </div>
             <div>

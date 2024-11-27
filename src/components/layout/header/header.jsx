@@ -83,7 +83,7 @@ const Header = () => {
           <div>
             <Link href="/">
               <Image
-                src="/assets/svg/floral.svg"
+                src="/logo/couple_logo.png"
                 alt="logo"
                 fluid
                 className={styles.logo}

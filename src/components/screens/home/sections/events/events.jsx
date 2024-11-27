@@ -6,31 +6,10 @@ import { Image } from "react-bootstrap";
 import fonts from "@/styles/fonts";
 import { GeoAltFill } from "react-bootstrap-icons";
 import Link from "next/link";
+import EVENT_DETAILS from "@/constants/event_details";
 
 const EventsSection = () => {
-  const events = [
-    {
-      name: "Engagement",
-      place: "MSR Mahal, Chennai",
-      time: "5 PM to 11 PM",
-      text: "Two souls, one journey! 💍 Sidharth and Hasini are set to exchange rings and promises soon. Join us in celebrating their beautiful beginning and love-filled future! ❤️",
-      img: "/assets/svg/couple.svg",
-    },
-    {
-      name: "Reception",
-      place: "MSR Mahal, Chennai",
-      time: "5 PM to 11 PM",
-      text: "The celebration continues! 🎉 Sidharth and Hasini invite you to their grand reception as they begin their new chapter together. Join us for an evening of love, joy, and blessings! ❤️",
-      img: "/assets/svg/reception.svg",
-    },
-    {
-      name: "The Wedding..!!",
-      place: "MSR Mahal, Chennai",
-      time: "5 PM to 11 PM",
-      text: "The big day is here! 🎊 Sidharth and Hasini are getting married, and it’s going to be magical! 💍✨ Join us to celebrate love, laughter, and their happily ever after! ❤️",
-      img: "/assets/svg/engagement.svg",
-    },
-  ];
+  const events = EVENT_DETAILS.all_events
 
   return (
     <section id="events" className={styles.EventsSection}>

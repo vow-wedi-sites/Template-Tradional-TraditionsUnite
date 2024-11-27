@@ -23,8 +23,11 @@
     z-index: 100;
 
     .logo {
-      width: 500px;
-      margin: auto;
+      width: fit-content;
+      margin: 40px auto;
+      img {
+        width: 500px;
+      }
     }
   }
 

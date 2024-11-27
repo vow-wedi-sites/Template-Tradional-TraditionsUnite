@@ -1,15 +1,15 @@
 const SOCIAL_MEDIA_LINKS = [
   {
     name: "facebook",
-    link: "https://www.facebook.com/profile.php?id=61563472653737",
+    link: "#",
   },
   {
     name: "instagram",
-    link: "https://www.youtube.com/@XylemStraws",
+    link: "https://www.instagram.com/vow_wedding_websites/profilecard/?igsh=MXB1ZHVtc2V4YWJyNQ==",
   },
   {
     name: "youtube",
-    link: "https://www.instagram.com/xylemstraws/?hl=en",
+    link: "#",
   },
 ];
 

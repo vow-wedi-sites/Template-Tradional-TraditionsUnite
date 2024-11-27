@@ -3,6 +3,7 @@ import styles from "./hero.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import { Image } from "react-bootstrap";
 import fonts from "@/styles/fonts";
+import EVENT_DETAILS from "@/constants/event_details";
 
 const HeroSection = () => {
   return (
@@ -23,11 +24,11 @@ const HeroSection = () => {
               data-aos="zoom-in"
               data-aos-offset="-300"
             >
-              Sidharth & Hasini
+              {EVENT_DETAILS.groom.name} & {EVENT_DETAILS.bride.name}
             </h2>
             <div data-aos="fade-up" data-aos-offset="-300">
               <span>On</span>
-              <p>12.10.24</p>
+              <p>{EVENT_DETAILS.events.wedding.date}</p>
             </div>
           </div>
         </div>
