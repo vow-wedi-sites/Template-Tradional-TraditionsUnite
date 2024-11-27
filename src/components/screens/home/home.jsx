@@ -6,6 +6,7 @@ import CoupleSection from "./sections/couple/couple";
 import GallerySection from "./sections/gallery/gallery";
 import EventsSection from "./sections/events/events";
 import RSVP_Section from "./sections/rsvp/rsvp";
+import DestinationsSection from "./sections/destinations/destinations";
 
 const HomeScreen = () => {
   return (
@@ -14,6 +15,7 @@ const HomeScreen = () => {
       <QuoteSection />
       <CoupleSection />
       <EventsSection />
+      <DestinationsSection/>
       <GallerySection />
       <RSVP_Section />
     </main>

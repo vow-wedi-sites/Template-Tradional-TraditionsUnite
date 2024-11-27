@@ -30,7 +30,7 @@ const EventsSection = () => {
                     <span className={fonts.rouge_Script}>{event.text}</span>
                     <br />
                     <br />
-                    <Link href="#">
+                    <Link href="#destinations">
                       <button>
                         Get Location <GeoAltFill />
                       </button>

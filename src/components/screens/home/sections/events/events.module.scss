@@ -17,6 +17,8 @@
   }
 
   .wrap {
+    position: relative;
+    z-index: 10;
     .event {
       display: flex;
       max-width: 1000px;
