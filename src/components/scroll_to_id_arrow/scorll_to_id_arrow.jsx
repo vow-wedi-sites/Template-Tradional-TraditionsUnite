@@ -6,6 +6,7 @@ import Link from "next/link";
 const ScrollToIdArrow = ({ id, text }) => {
   return (
     <div className={styles.arrow}>
+      <></>
       <Link href={`#${id}`}>
         <p>{text}</p>
         <ChevronDown />
